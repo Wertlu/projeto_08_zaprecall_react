@@ -16,7 +16,7 @@
     margin: 140px 0 35px 0;
     width: 345px;
     height: 49px;
-    border: 1px solid #000000;
+    border: 1px solid black;
     border-radius: 12px;
     padding: 0 16px;
     outline: none;
@@ -40,8 +40,8 @@
   .landing-page button {
     width: 345px;
     height: 72px;
-    background-color: #ffffff;
-    border: 3px solid #ffef61;
+    background-color: white;
+    border: 3px solid yellow;
     border-radius: 12px;
     font-weight: bold;
     display: flex;
