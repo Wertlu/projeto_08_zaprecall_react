@@ -9,7 +9,7 @@ export default function BackFace({ question, answer, setFace, setBorder, cardPos
     ]
     return (
         <div className="back-face">
-            <span>{`${cardPosition}/${deckLength}`}</span>
+            <span data-identifier="counter">{`${cardPosition}/${deckLength}`}</span>
             <h2>{question}</h2>
             <p>{answer}</p>
             <div className="button-box">

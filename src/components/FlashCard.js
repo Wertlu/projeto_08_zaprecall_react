@@ -8,7 +8,7 @@ export default function FlashCard({ question, answer, cardPosition, deckLength, 
     const [face, setFace] = useState("front");
 
     return (
-        <div className={`flashcard ${border}`}>
+        <div data-identifier="flashcard" className={`flashcard ${border}`}>
             {face === "front" ? <FrontFace question={question} cardPosition={cardPosition} deckLength={deckLength} setFace={setFace} img={turn} /> : ""}
             {face === "back" ? <BackFace question={question} answer={answer} cardPosition={cardPosition} deckLength={deckLength} setFace={setFace} setBorder={setBorder} setResult = {setResult} result = {result} /> : ""}
             {face === "choice" ? <Choice question={question} answer={answer} cardPosition={cardPosition} deckLength={deckLength} setFace={setFace} setBorder={setBorder} img={turn} setFlashCard={setFlashCard} setPage={setPage} result = {result}  target={target} /> : ""}

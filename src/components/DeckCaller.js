@@ -1,6 +1,6 @@
 export default function DeckCaller({label, setDeck, img, setPage, deck, target, setTarget}){
 return(
-<button onClick={() => game(setTarget, target, setPage, setDeck, deck)}>{label} <img src={img} alt="" /></button>
+<button data-identifier="start-zap-recall" onClick={() => game(setTarget, target, setPage, setDeck, deck)}>{label} <img src={img} alt="" /></button>
 );
 }
 
